@@ -1,5 +1,6 @@
 DEPS=github.com/mpl/scgiclient \
-	github.com/stretchr/testify
+	github.com/stretchr/testify \
+	github.com/go-xmlfmt/xmlfmt
 
 SRC_DIRS=pkg
 
