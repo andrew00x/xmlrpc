@@ -1,13 +1,6 @@
-DEPS=github.com/mpl/scgiclient \
-	github.com/stretchr/testify \
-	github.com/go-xmlfmt/xmlfmt
-
 SRC_DIRS=pkg
 
-deps:                 ## Get all dependencies
-	@go get $(DEPS)
-
-test: deps            ## Run tests
+test:                 ## Run tests
 	@go test -v $(addprefix ./, $(addsuffix /..., $(SRC_DIRS)))
 
 help:                 ## Print this help
